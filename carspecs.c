@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct specs{
+struct specs{   // spec struct
         char name[10];
         double power;
         char model[10];
