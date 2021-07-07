@@ -10,8 +10,6 @@ void readSpecs(struct specs*);
 void printCar(struct specs);
 void printCars(struct specs*, int);
 
-
-
 int main(void){
         int num;
         printf("Type the number of cars\n");
