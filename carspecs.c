@@ -16,11 +16,12 @@ int main(void){
         int num;
         printf("Type the number of cars\n");
         scanf("%d", &num);
-        struct specs cars[num];
+        struct specs* cars = (struct specs*)malloc(num*sizeof(*cars)); //cars[num];
         for(int i=0; i<num; i++){
                 readSpecs(&cars[i]);
         }
         printCars(cars, num);
+        free(cars);
                 return 0;
 }
 void readSpecs(struct specs* car){
